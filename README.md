@@ -14,5 +14,6 @@ Set Walk Speed / Reset
 
 Donate any amount to other players in your session
 
+Race sniper! Select the Car, Car Color, and Bet then press Join Race when the spots are available to never miss another race.
 
 More updates will come soon for this GUI!!
