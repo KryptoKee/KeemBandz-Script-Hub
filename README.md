@@ -1,8 +1,10 @@
 # KeemBandz-Script-Hub
 
-My first GUI was made recently!
+Starting making my own Roblox Scripts and GUIs... Follow my journey and access all the open source scripts here. Enjoy!
 
-More updates will come soon for this GUI, MORE GAMES SOON!!
+First game i made a script for is ony of my favorite games, Street Outlaws Cash Days! I will continue to update as needed but im happy with where it is right now.
+
+More games coming soon, i will eventually make all my scripts into a hub option as well for those who prefer it :)
 
 # Street Outlaws Cash Days (9370296952)
 
