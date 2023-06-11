@@ -48,7 +48,7 @@ RaceSection:NewDropdown("Choose Car", "Select your car", {"FoxBodyMustang1990", 
 end)
 
 local color
-RaceSection:NewDropdown("Choose Color", "Color of your car", {"Gray", "White", "Blue", "Red", "Purple", "Brown", "Yellow", "Green"}, function(currentOption)
+RaceSection:NewDropdown("Choose Color", "Color of your car", {"Gray", "White", "Blue", "Red", "Purple", "Brown", "Yellow", "Green", "Orange"}, function(currentOption)
     color = currentOption
 end)
 
