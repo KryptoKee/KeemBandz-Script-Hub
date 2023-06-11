@@ -1,6 +1,10 @@
-# KeemBandz-Street-Outlaws
+# KeemBandz-Script-Hub
 
-My first GUI!
+My first GUI was made recently!
+
+More updates will come soon for this GUI, MORE GAMES SOON!!
+
+# Street Outlaws Cash Days
 
 Give and Remove money from yourself
 
