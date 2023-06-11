@@ -4,7 +4,9 @@ My first GUI was made recently!
 
 More updates will come soon for this GUI, MORE GAMES SOON!!
 
-# Street Outlaws Cash Days
+# Street Outlaws Cash Days (9370296952)
+
+# " loadstring(game:HttpGet("https://raw.githubusercontent.com/KryptoKee/KeemBandz-Script-Hub/main/street-outlaws.lua%22))() "
 
 Give and Remove money from yourself
 
