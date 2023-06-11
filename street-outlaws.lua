@@ -3,6 +3,7 @@ local Window = Library.CreateLib("KeemBandz Street Outlaws GUI", "Ocean")
 
 
 
+
 --MONEY
 
 
@@ -16,6 +17,7 @@ end)
 MainSection:NewDropdown("Remove Money", "Select amount to remove", {"-100000", "-250000", "-1000000", "-10000000"}, function(currentOption)
     game:GetService("ReplicatedStorage"):WaitForChild("WinningsAdd"):FireServer(currentOption)
 end)
+
 
 
 --SELF
@@ -34,8 +36,10 @@ PlayerSection:NewButton("Reset WS", "Resets to default", function()
 end)
 
 
+
 --RACE
 
+local Main = Window:NewTab("Race")
 local RaceSection = Main:NewSection("Race")
 
 local car
@@ -68,8 +72,15 @@ RaceSection:NewButton("Join Race", "Attempt to join race", function()
     end
 end)
 
+
+
 --DONATE
 
+
+local function parseNumber(txt)
+    local num = tonumber(txt)
+    return num and num > 0 and num or nil
+end
 
 local Main = Window:NewTab("Donate")
 local GiveSection = Main:NewSection("Give")
@@ -95,7 +106,9 @@ for _, player in ipairs(game.Players:GetPlayers()) do
 end
 
 
+
 --OTHER
+
 
 local Main = Window:NewTab("Other")
 local OtherSection = Main:NewSection("Other")
