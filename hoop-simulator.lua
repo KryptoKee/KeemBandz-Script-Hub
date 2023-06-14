@@ -6,14 +6,10 @@ local Tab = Window:NewTab("Main")
 local MainSection = Tab:NewSection("Settings")
 
 MainSection:NewToggle("Auto Farm", "Stand within range of hoop to farm", function(state)
-    LoopEnabled = state
-
-    if LoopEnabled then
-        print("Toggle On")
-        while LoopEnabled do
-            ExecuteCode()
-            wait(4)
-        end
+    if state then
+        local A_1 = 1
+        local Event = game:GetService("ReplicatedStorage")["events-shared/core/events.module@GlobalEvents"].throwBall
+        Event:FireServer(A_1)        
     else
         print("Toggle Off")
     end
