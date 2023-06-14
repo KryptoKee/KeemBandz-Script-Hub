@@ -26,7 +26,7 @@ MainSection:NewToggle("Auto Farm", "Stand within range of hoop to farm", functio
     end
 end)
 
-MainSection:NewSlider("Wait Time", "Adjust the wait time from 1 to 15", 60, 1, function(value)
+MainSection:NewSlider("Wait Time", "Adjust the wait time from 1 to 10", 10, 1, function(value)
     waitTime = value
 end)
 
@@ -34,18 +34,6 @@ MainSection:NewButton("Perfect Shot!", "Will be a perfect 100 power shot", funct
     local A_1 = 1
 local Event = game:GetService("ReplicatedStorage")["events-shared/core/events.module@GlobalEvents"].throwBall
 Event:FireServer(A_1)
-end)
-
-local Main = Window:NewTab("Self")
-local SelfSection = Main:NewSection("Self")
-
-SelfSection:NewSlider("Walkspeed", "SPEED!!", 600, 16, function(value)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
-end)
-
-SelfSection:NewButton("Reset WS", "Resets to default", function()
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
 -- Start the GUI
