@@ -8,7 +8,7 @@ More games coming soon, i will eventually make all my scripts into a hub option 
 
 # Street Outlaws Cash Days (9370296952)
 
-SCRIPT: loadstring(game:HttpGet("https://raw.githubusercontent.com/KryptoKee/KeemBandz-Script-Hub/main/street-outlaws.lua%22))()
+SCRIPT: loadstring(game:HttpGet("https://raw.githubusercontent.com/KryptoKee/KeemBandz-Script-Hub/main/street-outlaws.lua"))()
 
 Give and Remove money from yourself
 
