@@ -27,3 +27,5 @@ SCRIPT: loadstring(game:HttpGet("https://raw.githubusercontent.com/KryptoKee/Kee
 This script is very simple and only has one function for now.
 
 Stand within range of the hoop for your current level and enable the Auto Farm, you will repeatedly score a basket!
+
+Use slider to adjust time between throws if you get the red messages, i reccomend 3 seconds delay!
