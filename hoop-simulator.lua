@@ -5,14 +5,6 @@ local Window = Library.CreateLib("KeemBandz Hoop Simulator Auto Farm", "Synapse"
 local Tab = Window:NewTab("Main")
 local MainSection = Tab:NewSection("Settings")
 
-local LoopEnabled = false
-local A_1 = 1
-local Event = game:GetService("ReplicatedStorage")["events-shared/core/events.module@GlobalEvents"].throwBall
-
-local function ExecuteCode()
-    Event:FireServer(A_1)
-end
-
 MainSection:NewToggle("Auto Farm", "Stand within range of hoop to farm", function(state)
     LoopEnabled = state
 
