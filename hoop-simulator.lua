@@ -30,7 +30,7 @@ MainSection:NewSlider("Wait Time", "Adjust the wait time from 1 to 15", 15, 1, f
     waitTime = value
 end)
 
-Section:NewButton("Perfect Shot!", "Will be a perfect 100 power shot", function()
+MainSection:NewButton("Perfect Shot!", "Will be a perfect 100 power shot", function()
     local A_1 = 1
 local Event = game:GetService("ReplicatedStorage")["events-shared/core/events.module@GlobalEvents"].throwBall
 Event:FireServer(A_1)
