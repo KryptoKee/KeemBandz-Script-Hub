@@ -26,7 +26,7 @@ MainSection:NewToggle("Auto Farm", "Stand within range of hoop to farm", functio
     end
 end)
 
-MainSection:NewSlider("Wait Time", "Adjust the wait time from 1 to 15", 15, 1, function(value)
+MainSection:NewSlider("Wait Time", "Adjust the wait time from 1 to 15", 60, 1, function(value)
     waitTime = value
 end)
 
@@ -39,13 +39,13 @@ end)
 local Main = Window:NewTab("Self")
 local SelfSection = Main:NewSection("Self")
 
-SelfSection:NewSlider("Walkspeed", "SPEED!!", 5000, 16, function(value)
-    LocalPlayer.Character.Humanoid.WalkSpeed = value
+SelfSection:NewSlider("Walkspeed", "SPEED!!", 600, 16, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 
 SelfSection:NewButton("Reset WS", "Resets to default", function()
-    LocalPlayer.Character.Humanoid.JumpPower = 50
-    LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
 -- Start the GUI
