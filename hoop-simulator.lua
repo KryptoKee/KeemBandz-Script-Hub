@@ -39,7 +39,7 @@ end)
 local Main = Window:NewTab("Self")
 local SelfSection = Main:NewSection("Self")
 
-SelfSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(value)
+SelfSection:NewSlider("Walkspeed", "SPEED!!", 5000, 16, function(value)
     LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 
