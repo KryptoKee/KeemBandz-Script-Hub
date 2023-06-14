@@ -19,3 +19,11 @@ Donate any amount to other players in your session
 Race sniper! Select the Car, Color of car, and Bet then press Join Race when the spots are available to never miss another race.
 
 More updates will come soon for this GUI!!
+
+# Hoop Simulator! Auto Farm (10534865425)
+
+SCRIPT: loadstring(game:HttpGet("https://raw.githubusercontent.com/KryptoKee/KeemBandz-Script-Hub/main/street-outlaws.lua%22))()
+
+This script is very simple and only has one function for now.
+
+Stand within range of the hoop for your current level and enable the Auto Farm, you will repeatedly score a basket!
