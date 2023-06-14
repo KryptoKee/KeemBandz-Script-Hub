@@ -22,7 +22,7 @@ More updates will come soon for this GUI!!
 
 # Hoop Simulator! Auto Farm (10534865425)
 
-SCRIPT: loadstring(game:HttpGet("https://raw.githubusercontent.com/KryptoKee/KeemBandz-Script-Hub/main/hoop-simulator.lua%22))()
+SCRIPT: loadstring(game:HttpGet("https://raw.githubusercontent.com/KryptoKee/KeemBandz-Script-Hub/main/hoop-simulator.lua"))()
 
 This script is very simple and only has one function for now.
 
