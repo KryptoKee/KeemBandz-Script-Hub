@@ -36,5 +36,17 @@ local Event = game:GetService("ReplicatedStorage")["events-shared/core/events.mo
 Event:FireServer(A_1)
 end)
 
+local Main = Window:NewTab("Self")
+local SelfSection = Main:NewSection("Self")
+
+SelfSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(value)
+    LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+SelfSection:NewButton("Reset WS", "Resets to default", function()
+    LocalPlayer.Character.Humanoid.JumpPower = 50
+    LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
 -- Start the GUI
 Library:Init()
