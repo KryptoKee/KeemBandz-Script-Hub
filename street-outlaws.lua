@@ -49,7 +49,7 @@ do
     local RaceSection = Main:NewSection("Race Sniper")
     local car, color, bet
 
-    RaceSection:NewDropdown("Choose Car", "Select your car", {"FoxBodyMustang1990", "FoxBodyMustang1992", "ChevroletElCamino", "ChevroletBlazerBlown", "ChevroletCamaro1969", "ChevroletCamaro1989", "ChevroletNova1967", "ChevroletS10", "ChevroletImpalaSS", "ChevroletBelair", "DodgeChargerRT", "MazdaRX7", "ToyotaPickup"}, function(value)
+    RaceSection:NewDropdown("Choose Car", "Select your car", {"FoxBodyMustang1990", "FoxBodyMustang1992", "ChevroletMalibu", "ChevroletElCamino", "ChevroletBlazerBlown", "ChevroletCamaro1969", "ChevroletCamaro1989", "ChevroletNova1967", "ChevroletS10", "ChevroletImpalaSS", "ChevroletBelair", "DodgeChargerRT", "MazdaRX7", "ToyotaPickup"}, function(value)
         car = value
     end)
 
@@ -121,4 +121,29 @@ do
             Library:ChangeColor(theme, color3)
         end)
     end
+end
+
+--CAR
+do
+    local Main = Window:NewTab("Vehicle")
+    local CarSection = Main:NewSection("Options")
+
+    CarSection:NewToggle("Flames Toggle", "Enable exhaust flames!", function(state)
+        if state then
+            local args = {
+                [1] = "Flames",
+                [2] = true
+            }
+            
+            workspace:WaitForChild("Cars"):WaitForChild("KeemBandzFoxBodyMustang1990:White"):WaitForChild("ExhaustHandler"):FireServer(unpack(args))
+        else
+            local args = {
+                [1] = "Flames",
+                [2] = false
+            }
+            
+            workspace:WaitForChild("Cars"):WaitForChild("KeemBandzFoxBodyMustang1990:White"):WaitForChild("ExhaustHandler"):FireServer(unpack(args))
+        end
+    end)
+
 end
